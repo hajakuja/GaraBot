@@ -1,0 +1,1 @@
+ACC_MESSAGES = ['U kry']
