@@ -39,7 +39,7 @@ def count_save(message):
     
     if str(who.id) in data_json:
         data_json[str(who.id)]['count'] += 1
-        data_json[str(who.id)]['count'].append(str(datetime.now()))
+        data_json[str(who.id)]['entry_dates'].append(str(datetime.now()))
     else:
         data_json[who.id] = {'name':who.first_name, 'count':1, 'entry_dates':[str(datetime.now())]}
 
